@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adetoro's website</title>
+    <link rel="icon" href="hug.jpeg" type="image/x-icon">
+    <link rel="icon" href="LAUNCH Logo.png" type="image/x-icon">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  </head>
+
+<script>
+  const buttons = document.querySelectorAll('.post-footer button');
+  buttons.forEach(button => {
+    let isClicked = false;
+    button.addEventListener('click', () => {
+      isClicked = !isClicked;
+      if (isClicked) {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
+      }
+    });
+  });
+</script>
+
+<body>
+  <div class="community-section">
+    <h2 style="color: black;">What would you like to say?</h2>
+    <div class="community-posts">
+      <div class="post">
+        <div class="post-header">
+          <img src="noprofilepic.png" alt="Profile picture">
+          <div class="post-author">
+            <h3>Luther</h3>
+            <span>Posted on 3/24/2023</span>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>Smooth services!</p>
+        </div>
+        <div class="post-footer">
+          <button class="like-button">Like</button>
+          <button class="comment-button">Reply</button>
+          <button class="share-button">Share</button>
+        </div>   
+        
+      </div>
+      <div class="post">
+        <div class="footer-post-footer" style= "text-align: center;">
+          <button class="like-button">Comment</button>
+        </div>
+        <!-- Another post goes here -->
+      </div>
+      <!-- More posts go here -->
+    </div>
+  </div>
+
+  <iframe src="https://youtu.be/QZXPeRPZ3U4"></iframe>
+</body>
+</html>
+  

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Adetoro's website</title>
+  <link rel="icon" href="eyes.jpeg" type="image/x-icon">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<style>
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+  .music{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .music .bar{
+    width: 6px;
+    border-radius: 10px;
+    background: white;
+    animation: movement 1.5s ease-in-out infinite;
+  }
+
+  @keyframes movement{
+    0%, 100%{
+      height: 2px;
+    }
+
+    50%{
+      height: 80px;
+    }
+  }
+
+  .music .bar:nth-child(1){
+    background: lightblue;
+    animation-delay: 1s;
+  }
+  
+  .music .bar:nth-child(2){
+    background: lightblue;
+    animation-delay: .8s;
+  }
+  
+  .music .bar:nth-child(3){
+    background: lightblue;
+    animation-delay: .6s;
+  }
+  
+  .music .bar:nth-child(4){
+    background: lightblue;
+    animation-delay: .4s;
+  }
+  
+  .music .bar:nth-child(5){
+    background: lightblue;
+    animation-delay: .2s;
+  }
+  
+  .music .bar:nth-child(6){
+    background: lightblue;
+    animation-delay: .2s;
+  }
+  
+  .music .bar:nth-child(7){
+    background: lightblue;
+    animation-delay: 1s;
+  }
+  
+  .music .bar:nth-child(8){
+    background: lightblue;
+    animation-delay: 1s;
+  }
+  
+</style>
+
+<body>
+  <div class="music">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+    
+</body>
+
+</html>
